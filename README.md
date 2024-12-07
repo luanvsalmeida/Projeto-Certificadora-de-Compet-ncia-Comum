@@ -1,2 +1,6 @@
 # Projeto-Certificadora-de-Compet-ncia-Comum
 Projeto da disciplina de Certificadora de Competência Comum 2024-02
+
+## Download
+
+[Baixe o executável aqui](https://github.com/luanvsalmeida/Projeto-Certificadora-de-Compet-ncia-Comum/releases/download/v1.0.0/programa.exe)
