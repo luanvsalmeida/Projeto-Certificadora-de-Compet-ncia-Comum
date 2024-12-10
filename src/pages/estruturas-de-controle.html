@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Controle</title>
+</head>
+<body>
+    <header>
+        <h1>Fundamentos de Programação</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <h3>Lista de conteúdos</h3>
+                <li><a href="./pages/algoritmos.html">Algoritmos</a></li>
+                <li><a href="./pages/operadores.html">Operadores e Tipos de Dados</a></li>
+                <li><a href="./pages/estruturas-de-controle.html">Estruturas de Controle</a></li>
+                <li><a href="./pages/vetores-e-matrizes.html">Vetores e Matrizes</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <h2>Estruturas de Controle</h2>
+
+            <h3>1. Condicionais</h3>
+            <p>As estruturas condicionais permitem que o programa tome decisões com base em condições específicas. Elas são fundamentais para tornar os programas dinâmicos e adaptáveis.</p>
+
+            <h4>Definição de Condicionais</h4>
+            <p>As estruturas condicionais avaliam expressões booleanas e, dependendo do resultado, executam diferentes blocos de código. Em C, os principais tipos de estruturas condicionais são:</p>
+            <ul>
+                <li><strong>if:</strong> Executa um bloco de código se a condição for verdadeira.</li>
+                <li><strong>if...else:</strong> Executa um bloco de código se a condição for verdadeira e outro se for falsa.</li>
+                <li><strong>if...else if:</strong> Permite testar várias condições em sequência.</li>
+            </ul>
+
+            <h4>Exemplos de Condicionais</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int idade = 20;
+    if (idade >= 18) {
+        printf("Você é maior de idade.\n");
+    }
+    return 0;
+}
+            </pre>
+
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int nota = 75;
+    if (nota >= 60) {
+        printf("Você foi aprovado!\n");
+    } else {
+        printf("Você foi reprovado!\n");
+    }
+    return 0;
+}
+            </pre>
+
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int hora = 14;
+    if (hora < 12) {
+        printf("Bom dia!\n");
+    } else if (hora < 18) {
+        printf("Boa tarde!\n");
+    } else {
+        printf("Boa noite!\n");
+    }
+    return 0;
+}
+            </pre>
+
+            <h3>2. Laços de Repetição</h3>
+            <p>Os laços de repetição permitem executar um bloco de código repetidamente enquanto uma determinada condição é verdadeira. Os principais tipos de laços em C são:</p>
+            <ul>
+                <li><strong>for:</strong> Um laço controlado com um número fixo de iterações.</li>
+                <li><strong>while:</strong> Executa o bloco de código enquanto a condição for verdadeira.</li>
+                <li><strong>do...while:</strong> Executa o bloco de código pelo menos uma vez, verificando a condição no final.</li>
+            </ul>
+
+            <h4>Exemplos de Laços</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    for (int i = 0; i < 5; i++) {
+        printf("Iteração %d\n", i);
+    }
+    return 0;
+}
+            </pre>
+
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int i = 0;
+    while (i < 5) {
+        printf("Valor de i: %d\n", i);
+        i++;
+    }
+    return 0;
+}
+            </pre>
+
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int i = 0;
+    do {
+        printf("Valor de i: %d\n", i);
+        i++;
+    } while (i < 5);
+    return 0;
+}
+            </pre>
+
+            <h3>3. Exemplos Práticos</h3>
+
+            <h4>Exemplo 1: Calculando a soma de números pares</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int soma = 0;
+    for (int i = 1; i <= 10; i++) {
+        if (i % 2 == 0) {
+            soma += i;
+        }
+    }
+    printf("A soma dos números pares de 1 a 10 é: %d\n", soma);
+    return 0;
+}
+            </pre>
+
+            <h4>Exemplo 2: Verificação de nota</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int nota;
+    printf("Digite a nota do aluno: ");
+    scanf("%d", &nota);
+    if (nota >= 50) {
+        printf("Aluno aprovado!\n");
+    } else {
+        printf("Aluno reprovado!\n");
+    }
+    return 0;
+}
+            </pre>
+
+            <a href="../index.html">Voltar</a>
+            <a href="./vetores-e-matrizes.html">Próximo</a>
+        </div>
+    </div>
+</body>
+</html>

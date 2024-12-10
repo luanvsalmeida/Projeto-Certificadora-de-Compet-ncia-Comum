@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores e Tipos de Dados</title>
+</head>
+<body>
+    <header>
+        <h1>Fundamentos de Programação</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <h3>Lista de conteúdos</h3>
+                <li><a href="./pages/algoritmos.html">Algoritmos</a></li>
+                <li><a href="./pages/operadores.html">Operadores e Tipos de Dados</a></li>
+                <li><a href="./pages/estruturas-de-controle.html">Estruturas de Controle</a></li>
+                <li><a href="./pages/vetores-e-matrizes.html">Vetores e Matrizes</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <h2>Operadores e Tipos de Dados</h2>
+
+            <h3>1. Introdução aos Tipos de Dados e Operadores</h3>
+            <p>Os tipos de dados e os operadores são elementos fundamentais na programação. Os tipos de dados determinam como as variáveis armazenam informações, enquanto os operadores permitem realizar cálculos, comparações e manipulações com esses dados.</p>
+
+            <h3>Definição de Tipos de Dados</h3>
+            <ul>
+                <li><strong>Inteiros (int):</strong> armazenam números inteiros positivos ou negativos, como -10, 0 ou 100.</li>
+                <li><strong>Ponto flutuante (float, double):</strong> armazenam números com casas decimais, como 3.14 ou -2.718.</li>
+                <li><strong>Caractere (char):</strong> armazenam um único caractere, como 'A' ou 'z'.</li>
+                <li><strong>Booleanos:</strong> (não nativo em C, mas simulável com int) representam valores lógicos como 1 (verdadeiro) e 0 (falso).</li>
+            </ul>
+
+            <h3>Definição de Operadores</h3>
+            <p>Operadores são símbolos usados para realizar operações em variáveis e valores. Em C, eles incluem:</p>
+            <ol>
+                <li><strong>Aritméticos:</strong> realizam operações matemáticas básicas (+, -, *, /, %).</li>
+                <li><strong>Relacionais:</strong> comparam valores (==, !=, <, >, <=, >=).</li>
+                <li><strong>Lógicos:</strong> avaliam condições lógicas (&&, ||, !).</li>
+                <li><strong>Atribuição:</strong> atribuem valores a variáveis (=, +=, -=, etc.).</li>
+                <li><strong>Bit a Bit:</strong> operam diretamente nos bits de valores inteiros (&, |, ^, ~, <<, >>).</li>
+            </ol>
+
+            <h3>2. Explicação dos Conceitos</h3>
+            <p>Os tipos de dados são definidos no momento da declaração da variável, e o compilador reserva o espaço de memória adequado para armazenar o valor correspondente. Por exemplo:</p>
+            <pre>
+int idade = 25;      // Inteiro
+float altura = 1.75; // Ponto flutuante
+char inicial = 'A';  // Caractere
+            </pre>
+            <p>Os operadores permitem manipular os valores dessas variáveis. Operadores aritméticos, por exemplo, são usados para realizar cálculos:</p>
+            <pre>
+int soma = 10 + 20;         // Adição
+int subtracao = 30 - 10;    // Subtração
+int resto = 7 % 2;          // Resto da divisão
+            </pre>
+            <p>Já os operadores relacionais são usados em comparações:</p>
+            <pre>
+int a = 5, b = 10;
+if (a < b) {
+    printf("a é menor que b\n");
+}
+            </pre>
+            <p>Operadores lógicos são frequentemente combinados com relacionais para criar condições mais complexas:</p>
+            <pre>
+int x = 10, y = 20, z = 30;
+if (x < y && y < z) {
+    printf("Os valores estão em ordem crescente\n");
+}
+            </pre>
+
+            <h3>3. Exemplos Práticos</h3>
+
+            <h4>Exemplo 1: Soma de dois números</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num1, num2, soma;
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo número: ");
+    scanf("%d", &num2);
+    soma = num1 + num2;
+    printf("A soma é: %d\n", soma);
+    return 0;
+}
+            </pre>
+
+            <h4>Exemplo 2: Verificação de maior número</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int a, b;
+    printf("Digite o primeiro número: ");
+    scanf("%d", &a);
+    printf("Digite o segundo número: ");
+    scanf("%d", &b);
+    if (a > b) {
+        printf("%d é maior que %d\n", a, b);
+    } else if (a < b) {
+        printf("%d é maior que %d\n", b, a);
+    } else {
+        printf("Os números são iguais\n");
+    }
+    return 0;
+}
+            </pre>
+
+            <h4>Exemplo 3: Verificação de paridade</h4>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int numero;
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+    if (numero % 2 == 0) {
+        printf("O número é par\n");
+    } else {
+        printf("O número é ímpar\n");
+    }
+    return 0;
+}
+            </pre>
+
+            <a href="../index.html">Voltar</a>
+            <a href="./estruturas-de-controle.html">Próximo</a>
+        </div>
+    </div>
+</body>
+</html>
