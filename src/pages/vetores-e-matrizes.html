@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores e Matrizes</title>
+</head>
+<body>
+    <header>
+        <h1>Fundamentos de Programação</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <h3>Lista de conteúdos</h3>
+                <li><a href="./pages/algoritmos.html">Algoritmos</a></li>
+                <li><a href="./pages/operadores.html">Operadores e Tipos de Dados</a></li>
+                <li><a href="./pages/estruturas-de-controle.html">Estruturas de Controle</a></li>
+                <li><a href="./pages/vetores-e-matrizes.html">Vetores e Matrizes</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <h2>Vetores e Matrizes</h2>
+
+            <h3>1. Definição de Vetor e Matriz</h3>
+
+            <h4>Vetor</h4>
+            <p>Um vetor é uma estrutura de dados que armazena múltiplos valores do mesmo tipo de forma sequencial na memória. Os elementos são acessados por índices, começando de 0.</p>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int idades[5] = {18, 22, 25, 30, 28};
+    // Acessando e exibindo os elementos do vetor
+    printf("Idade da primeira pessoa: %d\n", idades[0]);
+    printf("Idade da segunda pessoa: %d\n", idades[1]);
+    return 0;
+}
+            </pre>
+
+            <h4>Matriz</h4>
+            <p>Uma matriz é uma estrutura de dados bidimensional, organizada em linhas e colunas. Cada elemento é acessado por dois índices: linha e coluna.</p>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int tabela[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    // Acessando e exibindo os elementos da matriz
+    printf("Elemento na posição [0][0]: %d\n", tabela[0][0]);
+    printf("Elemento na posição [1][2]: %d\n", tabela[1][2]);
+    return 0;
+}
+            </pre>
+
+            <h3>2. Funcionamento de Vetores e Matrizes</h3>
+            <h4>Funcionamento de Vetores</h4>
+            <p>Os vetores são armazenados de forma sequencial na memória. Eles permitem acesso rápido e eficiente a cada elemento utilizando índices.</p>
+
+            <h4>Funcionamento de Matrizes</h4>
+            <p>As matrizes são organizadas em duas dimensões (linhas e colunas) e são úteis para armazenar dados tabulares ou bidimensionais. Cada elemento é acessado utilizando dois índices.</p>
+
+            <h3>3. Exemplos dos Conceitos</h3>
+
+            <h4>Exemplo de Vetor</h4>
+            <p>Um vetor em C pode ser declarado e inicializado como mostrado abaixo:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int idades[5] = {18, 22, 25, 30, 28};
+    printf("Idade da terceira pessoa: %d\n", idades[2]);
+    return 0;
+}
+            </pre>
+
+            <h4>Exemplo de Matriz</h4>
+            <p>Uma matriz bidimensional pode ser usada para armazenar tabelas de dados:</p>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int tabela[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    printf("Elemento na posição [2][1]: %d\n", tabela[2][1]);
+    return 0;
+}
+            </pre>
+
+            <h3>4. Importância e Aplicações de Vetores e Matrizes</h3>
+            <h4>Vetores</h4>
+            <p>Vetores são amplamente utilizados para armazenar dados sequenciais, como listas de números ou nomes. Eles são essenciais para tarefas como ordenação, busca e manipulação de dados.</p>
+
+            <h4>Matrizes</h4>
+            <p>Matrizes são ideais para organizar dados em tabelas ou realizar cálculos matemáticos, como multiplicação de matrizes ou transformações geométricas.</p>
+
+            <a href="../index.html">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>
