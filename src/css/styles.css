@@ -1,15 +1,125 @@
+/* Importa a fonte JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    flex: 1;
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #FFFFFF; 
+  color: #000000; 
+  line-height: 1.6;
+}
+
+header {
+  background-color: #007BFF;  
+  color: #FFFFFF; 
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 20px;
 }
 
+/* Sidebar */
 .sidebar {
-    background-color: greenyellow;
-    width: 40%;
+  width: 25%;
+  background-color: #87CEFA; 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #007BFF;
+}
+
+.body {
+  width: 75%;
+  padding: 20px;
+}
+
+.body h2,
+.body h3,
+.body h4 {
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.body p {
+  margin-bottom: 15px;
+}
+
+.body a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.body a:hover {
+  background-color: #0056b3;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-left: 3px solid #007BFF;
+  overflow-x: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar,
+  .body {
+    width: 100%;
+  }
+  
+  .sidebar {
+    margin-bottom: 20px;
+  }
 }
